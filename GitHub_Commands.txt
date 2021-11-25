@@ -1,0 +1,133 @@
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab   
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab   
+$ git init
+Initialized empty Git repository in C:/Users/chauh/OneDrive/Desktop/VS Code/DS Lab/.git/
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vscode/
+        Assignment2_Q1.c
+        Assignment2_Q2.c
+        Exp_10_Sorting.c
+        Exp_10_Sorting.exe       
+        Exp_11_Binary_Search.c   
+        Exp_1_Stack_Using_Array.c
+        Exp_2_Queue_Using_Array.c
+        Exp_3_InfixToPostfix.c   
+        Exp_4_Dequeue.c
+        Exp_5_SinglyLinkedList.c
+        Exp_6_DoublyLL.c
+        Exp_7_BinaryTreeTraversal.c
+        Exp_8_Operations_On_Tree.c
+        Exp_9_GraphTraversal.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git add -A
+warning: LF will be replaced by CRLF in .vscode/tasks.json.
+The file will have its original line endings in your working directory
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .vscode/launch.json
+        new file:   .vscode/settings.json
+        new file:   .vscode/tasks.json
+        new file:   Assignment2_Q1.c
+        new file:   Assignment2_Q2.c
+        new file:   Exp_10_Sorting.c
+        new file:   Exp_10_Sorting.exe
+        new file:   Exp_11_Binary_Search.c
+        new file:   Exp_1_Stack_Using_Array.c
+        new file:   Exp_2_Queue_Using_Array.c
+        new file:   Exp_3_InfixToPostfix.c
+        new file:   Exp_4_Dequeue.c
+        new file:   Exp_5_SinglyLinkedList.c
+        new file:   Exp_6_DoublyLL.c
+        new file:   Exp_7_BinaryTreeTraversal.c
+        new file:   Exp_8_Operations_On_Tree.c
+        new file:   Exp_9_GraphTraversal.c
+
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git commit -a -m "Uploading All programs"
+[master (root-commit) 8b69fc4] Uploading All programs
+ 17 files changed, 2566 insertions(+)
+ create mode 100644 .vscode/launch.json
+ create mode 100644 .vscode/settings.json
+ create mode 100644 .vscode/tasks.json
+ create mode 100644 Assignment2_Q1.c
+ create mode 100644 Assignment2_Q2.c
+ create mode 100644 Exp_10_Sorting.c
+ create mode 100644 Exp_10_Sorting.exe
+ create mode 100644 Exp_11_Binary_Search.c
+ create mode 100644 Exp_1_Stack_Using_Array.c
+ create mode 100644 Exp_2_Queue_Using_Array.c
+ create mode 100644 Exp_3_InfixToPostfix.c
+ create mode 100644 Exp_4_Dequeue.c
+ create mode 100644 Exp_5_SinglyLinkedList.c
+ create mode 100644 Exp_6_DoublyLL.c
+ create mode 100644 Exp_7_BinaryTreeTraversal.c
+ create mode 100644 Exp_8_Operations_On_Tree.c
+ create mode 100644 Exp_9_GraphTraversal.c
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git remote
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git remote add origin git@github.com:AbdurrahmanChauhan/DSL-Experiments.git
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git remote
+origin
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git remote -v
+origin  git@github.com:AbdurrahmanChauhan/DSL-Experiments.git (fetch)
+origin  git@github.com:AbdurrahmanChauhan/DSL-Experiments.git (push)
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git push -u origin master
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 185.29 KiB | 1.18 MiB/s, done.
+Total 20 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/AbdurrahmanChauhan/DSL-Experiments/pull/new/master
+remote:
+To github.com:AbdurrahmanChauhan/DSL-Experiments.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+chauh@DESKTOP-6A5P871 MINGW64 ~/OneDrive/Desktop/VS Code/DS Lab (master)
+$
