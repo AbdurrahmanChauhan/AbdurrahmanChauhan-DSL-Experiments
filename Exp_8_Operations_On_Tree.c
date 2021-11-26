@@ -22,17 +22,17 @@ struct Node *newNode(int data)
 /* Change a tree so that the roles of the left and
 	right pointers are swapped at every node.
 So the tree...
-	4
+	 4
 	/ \
-	2 5
-	/ \
-1 3
+       2   5
+      /     \
+    1        3
 is changed to...
-	4
+	 4
 	/ \
-	5 2
-		/ \
-	3 1
+       5   2
+      /     \
+     3       1
 */
 void mirror(struct Node *node)
 {
@@ -50,9 +50,9 @@ void mirror(struct Node *node)
 		node->right = temp;
 	}
 }
+int count = 0;
 int countnodes(struct Node *root)
 {
-	int count = 0;
 	if (root != NULL)
 	{
 		countnodes(root->left);
@@ -95,16 +95,16 @@ int main()
 	/* Print inorder traversal of the input tree */
 	printf("Inorder traversal of the constructed tree is \n");
 	inOrder(root);
-	/* Convert tree to its mirror */
-	mirror(root);
-	/* Print inorder traversal of the mirror tree */
-	printf("\nInorder traversal of the mirror tree is \n");
-	inOrder(root);
 	/*Clone or copy Tree*/
 	clone=cloneBinaryTree(root);
 	/*InOrder traversal of clone tree */
 	printf("\nInorder traversal of the Clone Tree is\n");
 	inOrder(clone);
+	/* Convert tree to its mirror */
+	mirror(root);
+	/* Print inorder traversal of the mirror tree */
+	printf("\nInorder traversal of the mirror tree is \n");
+	inOrder(root);
 	printf("\nNumber of nodes in tree = %d", countnodes(root));
 	return 0;
 }
